@@ -17,7 +17,7 @@ paragraph.  Thereby attempting to understand the view of the House Lannister, fr
 And so we did this for all POV characters, in all books, and were able to visualize the total sentiment as well as the change in 
 sentiment for each of the Houses, for all of the books, and from each characters POV. 
 
-To replicate the data please start by downloading the source data, which is 30 text files that can be found in the TextFiles.zip folder.  Please sett your working directory to whatever folder you have stored the txt files in.
+To replicate the data please start by downloading the source data, which is 30 text files that can be found in the TextFiles.zip folder or you can download these text files as well as the python files for analysis in the GoTSentiment_Analysis.zip file. Please set your working directory to whatever folder you have stored the txt files in.
 
 Then you can begin the sentiment analysis by running the two sentiment analyzer python files first and then opening up the 
 All_Character_Sentiment.py file and following the instructions within the file.
