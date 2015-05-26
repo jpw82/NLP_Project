@@ -19,12 +19,6 @@ books = ["One","Two","Three","Four"]
 
 pov_characters = ["Areo","Arya","Asha","Bran","Cersei","Catelyn","Daenerys","Davos",
 "Eddard","Jaimie","Jon","Sansa","Samwell","Theon","Tyrion","Victarion"]
-
-#char_dict_para = {"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-#"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]}
-
-char_dict_sent = {"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]}
              
 houses = ["Stark","Lannister","Baratheon","Targaryen","Tully",
 "Martell","Greyjoy","Arryn","Tyrell","Frey","Bolton","Baelish"]
@@ -60,17 +54,11 @@ for f in files:
 ## where the characters are keys and an empty list is the value.  this is where we will put the sentiment observations
     
 
-book_dict_paragraphs = {"One":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]},"Two":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]},"Three":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]},"Four":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]}}
+book_dict_paragraphs = {"One":{key: list() for key in pov_characters},"Two":{key: list() for key in pov_characters},
+"Three":{key: list() for key in pov_characters},"Four":{key: list() for key in pov_characters}}
 
-book_dict_sentences = {"One":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]},"Two":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]},"Three":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]},"Four":{"Areo":[],"Arya":[],"Asha":[],"Bran":[],"Cersei":[],"Catelyn":[],"Daenerys":[],"Davos":[],
-"Eddard":[],"Jaimie":[],"Jon":[],"Sansa":[],"Samwell":[],"Theon":[],"Tyrion":[],"Victarion":[]}}
+book_dict_sentences = {"One":{key: list() for key in pov_characters},"Two":{key: list() for key in pov_characters},
+"Three":{key: list() for key in pov_characters},"Four":{key: list() for key in pov_characters}}
 
 
 

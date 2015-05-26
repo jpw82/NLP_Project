@@ -24,40 +24,30 @@ def sentiment_analyzer_para(txt_file,targets):
         a = tb.TextBlob(i)
         unit_holder.append(a)
      
-    house_dict = {"Stark":[],"Lannister":[],"Baratheon":[],"Targaryen":[],"Tully":[],
-                  "Martell":[],"Greyjoy":[],"Arryn":[],"Tyrell":[],"Frey":[],"Bolton":[],
-                  "Baelish":[]}
-                  
+    target_dict = {key: list() for key in targets}
+
     for i in targets:
         for u in unit_holder:        
             if i in u:
-                house_dict[i].append(u)
+                target_dict[i].append(u)
                 
-    house_sent_pol_dict = {"Stark":[],"Lannister":[],"Baratheon":[],"Targaryen":[],"Tully":[],
-                  "Martell":[],"Greyjoy":[],"Arryn":[],"Tyrell":[],"Frey":[],"Bolton":[],
-                  "Baelish":[]}  
+    target_sent_pol_dict = {key: list() for key in targets} 
     
-    house_sent_sub_dict = {"Stark":[],"Lannister":[],"Baratheon":[],"Targaryen":[],"Tully":[],
-                  "Martell":[],"Greyjoy":[],"Arryn":[],"Tyrell":[],"Frey":[],"Bolton":[],
-                  "Baelish":[]}  
+    target_sent_sub_dict = {key: list() for key in targets} 
                   
-    for h in house_dict:
-        for i in house_dict[h]:
-            house_sent_pol_dict[h].append(i.sentiment.polarity)
-        for s in house_dict[h]:
-            house_sent_sub_dict[h].append(s.sentiment.subjectivity)
+    for h in target_dict:
+        for i in target_dict[h]:
+            target_sent_pol_dict[h].append(i.sentiment.polarity)
+        for s in target_dict[h]:
+            target_sent_sub_dict[h].append(s.sentiment.subjectivity)
             
-    final_sent_pol_dict = {"Stark":[],"Lannister":[],"Baratheon":[],"Targaryen":[],"Tully":[],
-                  "Martell":[],"Greyjoy":[],"Arryn":[],"Tyrell":[],"Frey":[],"Bolton":[],
-                  "Baelish":[]}  
+    final_sent_pol_dict = {key: list() for key in targets}
     
-    final_sent_sub_dict = {"Stark":[],"Lannister":[],"Baratheon":[],"Targaryen":[],"Tully":[],
-                  "Martell":[],"Greyjoy":[],"Arryn":[],"Tyrell":[],"Frey":[],"Bolton":[],
-                  "Baelish":[]}  
+    final_sent_sub_dict = {key: list() for key in targets}  
                   
-    for p in house_dict:
-        x = pd.Series(house_sent_pol_dict[p])
-        y = pd.Series(house_sent_sub_dict[p])        
+    for p in target_dict:
+        x = pd.Series(target_sent_pol_dict[p])
+        y = pd.Series(target_sent_sub_dict[p])        
         final_sent_pol_dict[p] = x
         final_sent_sub_dict[p] = y
         
