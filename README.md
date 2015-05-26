@@ -1,5 +1,8 @@
 # NLP_Project
 GWU NLP Class 2015
+Project Members - Josh Winters, Mikhail Flom, Derrick Stucky and John Yoo
+
+POV Character Sentiment Analysis in ASOIF 
 
 These files can be used to perform sentiment analysis in Python 2.7, using textblob and the PatternAnalyzer, 
 on each of the characters in the A Song of Ice & Fire ASOIF) series of novels, also known as the HBO Series Game of Thrones
@@ -23,3 +26,5 @@ All_Character_Sentiment.py file and following the instructions within the file.
 Following these instructions should yield 8 xlsx files which have the sentiment polarity observations for each character for each book.
 The reason there are 8 is that we have performed the analysis twice for each character, once with sentences as the base unit of text 
 and the other with paragraphs as the base unit of text, the output files are labeled accordingly.
+
+The python files All_Character_Sentiment.py, sent_analyzer_para.py and sent_analyzer_sent were written by Josh Winters.
