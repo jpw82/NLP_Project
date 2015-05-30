@@ -5,7 +5,7 @@ Project Members - Josh Winters, Mikhail Flom, Derrick Stucky and John Yoo
 POV Character Sentiment Analysis in ASOIF 
 
 These files can be used to perform sentiment analysis in Python 2.7, using textblob and the PatternAnalyzer, 
-on each of the characters in the A Song of Ice & Fire ASOIF) series of novels, also known as the HBO Series Game of Thrones
+on several of the Houses of Westeros in the A Song of Ice & Fire ASOIF) series of novels, also known as the HBO Series Game of Thrones
 
 Generally what we set out to do was perform sentiment analysis, on 12 of the Houses of Westeros from the point of view of each of the saga's POV characters.  We did this by searching through the texts for each POV character and picking out units of text which contained a House name, such as Lannister or Stark, and then performing sentiment analysis on that unit of text and storing the results in POV characters data frame.  
 
